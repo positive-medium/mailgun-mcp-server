@@ -166,6 +166,14 @@ export const endpointGroups: Readonly<Record<ToolsetId, readonly EndpointEntry[]
     "PUT /v3/{domain_name}/templates/{template_name}/versions/{version_name}",
   ],
 
+  "send.keys": [
+    // API keys (list/create/delete) — notably domain-scoped sending keys
+    // (POST with kind=domain, role=sending, domain_name=<domain>).
+    "GET /v1/keys",
+    "POST /v1/keys",
+    "DELETE /v1/keys/{key_id}",
+  ],
+
   validate: [
     {
       endpoint: "GET /v4/address/validate",

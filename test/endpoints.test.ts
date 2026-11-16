@@ -127,8 +127,8 @@ describe("endpoint validation against OpenAPI spec", () => {
 });
 
 describe("toolset grouping", () => {
-  test("covers all 72 endpoints", () => {
-    expect(endpoints).toHaveLength(72);
+  test("covers all 75 endpoints", () => {
+    expect(endpoints).toHaveLength(75);
   });
 
   test("every toolset has at least one endpoint", () => {
@@ -189,7 +189,7 @@ describe("readOnly classification", () => {
   });
 
   test("every other POST/PUT endpoint is a write", () => {
-    expect(parsed.filter((e) => !e.readOnly)).toHaveLength(17);
+    expect(parsed.filter((e) => !e.readOnly)).toHaveLength(19);
   });
 });
 

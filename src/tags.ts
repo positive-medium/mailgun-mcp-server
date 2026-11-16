@@ -19,6 +19,7 @@ export const TOOLSETS = {
   "send.routes": "Inbound routes: list, view, update",
   "send.lists": "Mailing lists and list members",
   "send.templates": "Templates and template versions",
+  "send.keys": "Mailgun API keys: list, create, and delete domain sending keys",
   validate: "Email address validation",
   optimize: "Inbox placement test results",
   inspect: "Email preview test results",
