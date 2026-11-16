@@ -141,6 +141,12 @@ export const endpoints: readonly EndpointEntry[] = [
   // Account Limits
   "GET /v5/accounts/limit/custom/monthly",
 
+  // API Keys (notably domain-scoped sending keys: POST with kind=domain, role=sending,
+  // domain_name=<domain>)
+  "GET /v1/keys",
+  "POST /v1/keys",
+  "DELETE /v1/keys/{key_id}",
+
   // Validation
   { endpoint: "GET /v4/address/validate", toolName: "validate_email", tags: ["validate"] },
 
