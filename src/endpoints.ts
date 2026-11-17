@@ -43,6 +43,7 @@ export const endpoints: readonly EndpointEntry[] = [
   "POST /v3/domains/{domain_name}/messages/{storage_key}",
 
   // Domains
+  "POST /v4/domains",
   "GET /v4/domains",
   "GET /v4/domains/{name}",
   "PUT /v4/domains/{name}/verify",
